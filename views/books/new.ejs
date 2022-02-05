@@ -1,0 +1,49 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="row">
+  <div class="col-6 offset-3">
+      <form action="/books" method="POST" novalidate class="needs-validation">
+          <div class="mb-3">
+              <label class="form-label" for="title">Title</label>
+              <input class="form-control" type="text" id="title" name="book[title]" required>
+              <div class="valid-feedback">
+                  Looks Good!
+              </div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="description">Description</label>
+              <input class="form-control" type="text" id="description" name="book[description]" required>
+              <div class="valid-feedback">
+                Looks Good!
+            </div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="image">Image Url</label>
+              <input class="form-control" type="text" id="image" name="book[image]" required>
+              <div class="valid-feedback">
+                Looks Good!
+            </div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="pages">Number of Pages</label>
+                  <input type="text" class="form-control" id="pages" aria-label="price"
+                      aria-describedby="price-label" name="book[pages]" required>
+                      <div class="valid-feedback">
+                        Looks Good!
+                    </div>              
+          </div>
+
+          <div class="mb-3">
+              <label class="form-label" for="rating">Rating</label>
+              <input class="form-control" type="text" id="rating" name="book[goodreadsScore]" required>
+              <div class="valid-feedback">
+                Looks Good!
+            </div>
+          </div>
+          <div class="mb-3">
+              <button class="btn btn-success">Add a Book</button>
+          </div>
+      </form>
+      <a href="/books">All Books</a>
+  </div>
+</div>

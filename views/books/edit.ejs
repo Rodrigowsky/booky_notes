@@ -1,0 +1,49 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="row">
+  <div class="col-6 offset-3">
+      <form action="/books/<%=book._id%>?_method=PUT" method="POST" novalidate class="needs-validation">
+          <div class="mb-3">
+              <label class="form-label" for="title">Title</label>
+              <input class="form-control" type="text" id="title" name="book[title]" value="<%= book.title%>" required>
+              <div class="valid-feedback">
+                  Looks Good!
+              </div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="location">Location</label>
+              <input class="form-control" type="text" id="location" name="book[description]" value="<%= book.description%>" required>
+              <div class="valid-feedback">
+                Looks Good!
+            </div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="image">Image Url</label>
+              <input class="form-control" type="text" id="image" name="book[image]" value="<%= book.image%>" required>
+              <div class="valid-feedback">
+                Looks Good!
+            </div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="price">Number of Pages</label>
+                  <input type="text" class="form-control" id="price" aria-label="price"
+                      aria-describedby="price-label" name="book[pages]" value="<%= book.pages%>" required>
+                      <div class="valid-feedback">
+                        Looks Good!
+                    </div>              
+          </div>
+
+          <div class="mb-3">
+              <label class="form-label" for="rating">Rating</label>
+              <input class="form-control" type="text" id="rating" name="book[goodreadsScore]" value="<%= book.goodreadsScore%>" required>
+              <div class="valid-feedback">
+                Looks Good!
+            </div>
+          </div>
+          <div class="mb-3">
+              <button class="btn btn-success">Edit Book</button>
+          </div>
+      </form>
+      <a href="/books">All Books</a>
+  </div>
+</div>

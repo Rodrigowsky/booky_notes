@@ -1,0 +1,29 @@
+<% layout('layouts/boilerplate')%> 
+
+<div class="row">
+<% for (let book of booksIndex) { %>
+
+  <div class="card-deck">
+    <div class="card mb-4 mr-4" style="min-width: 18rem; max-width: 18rem;">
+      <img src="<%= book.image %> " class="card-img-top" alt="BookCoverImage" />
+      <div class="card-body">
+        <h5 class="card-title"><%=book.title %></h5>
+        <p class="card-text"><%= book.description %></p>
+        <%-include('../partials/modal',{book})%>
+      </div>
+    </div>
+  </div>
+
+<% } %>
+<div class="card-deck">
+  <div class="card mb-4 mr-4" style="min-width: 18rem; max-width: 18rem;">
+    <img src="" class="card-img-top" alt="BookCoverImage" />
+    <div class="card-body">
+      <h5 class="card-title">Create You Own</h5>
+      <p class="card-text">Enter Your Description</p>
+      <a href="#" class="btn btn-primary">Create</a>
+    </div>
+  </div>
+</div>
+</div>
+
