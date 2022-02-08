@@ -5,6 +5,7 @@ const router = express.Router({mergeParams:true});
 import noteLogic from '../controllers/notes.js'
 
 router.post('/newnote', catchAsync(noteLogic.createNote))
+router.delete('/:noteId/dnote', catchAsync(noteLogic.deleteNote))
 
 
 

@@ -15,9 +15,9 @@ const noteLogic = {
     res.redirect(`/books/${req.params.id}`)
   },
   deleteNote: async (req, res) => {
-    const { id, reviewId } = req.params
-    await Book.findByIdAndUpdate(id, { $pull: { reviews: reviewId } })
-    await Note.findByIdAndDelete(reviewId);
+    const { id, noteId } = req.params
+    console.log(req.params)
+    await Note.findByIdAndDelete(noteId);
     req.flash('success', 'Successfully deleted review')
     res.redirect(`/books/${id}`);
   }

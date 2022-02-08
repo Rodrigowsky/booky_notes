@@ -41,9 +41,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Title: <%= note.title %></h5>
                         <p class="card-text">Note: <%= note.body %></p>
-                       
-                    
-                        
+                        <form action="/books/<%=book._id%>/<%=note._id%>/dnote?_method=DELETE" method="post">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
                     </div>
                 </div>
                 <% } %>
