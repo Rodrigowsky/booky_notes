@@ -1,5 +1,5 @@
 # booky_notes
-A simple webapp to store notes about books  
+A CRUD web app to store notes about books  
   
 Built with:  
 Node.js and Express.js  
