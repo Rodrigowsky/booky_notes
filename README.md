@@ -1,6 +1,5 @@
 # booky_notes
 
-***
 ### ``Description``
 A CRUD web app to store notes about books.  
   
