@@ -1,5 +1,8 @@
 # booky_notes
-A CRUD web app to store notes about books  
+
+***
+### ``Description``
+A CRUD web app to store notes about books.  
   
 Built with:  
 Node.js and Express.js  
