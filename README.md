@@ -19,3 +19,6 @@ Mongoose as ODM
 <br>
 <img src="https://user-images.githubusercontent.com/67803259/171338765-33989e35-1fbc-4d25-84d8-4996f786f42d.png">
 
+<p align="center">
+Made with ❤️ and JavaScript
+</p>
